@@ -1,0 +1,103 @@
+html,body
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+header
+  height: .48rem
+  background: linear-gradient(90deg,#5190fe,#22c8fc)
+  position: relative
+  &>span
+    position: absolute
+    width: .34rem
+    height: .34rem
+    left: .1rem
+    top: .09rem
+    &>img
+      width: 100%
+      height: 100%
+  &>p
+    text-align: center
+    line-height: .48rem
+    color: #d3e6fd
+  &>time
+    position: absolute
+    right: .1rem
+    top: .05rem
+    color: #ffffff
+    font-weight: lighter
+    font-size: .29rem
+
+section
+  flex: 1
+  overflow: auto
+  padding: .06rem .1rem
+.search
+  background: #f3f3f3
+  border-radius: .03rem
+  height: .27rem
+  position: relative
+  &>input
+    width: 100%
+    height: 100%
+    border: none
+    background: #f3f3f3
+    text-align: center
+  &>input::-webkit-input-placeholder
+    color: #ababab
+  &>span
+    position: absolute
+    left: 40%
+    top: 24%
+    color: #ababab
+.sec_list
+  padding-top: .12rem
+  padding-bottom: .04rem
+  border-bottom: 2px solid #f4f4f4
+  &>dl
+    display: flex
+    &>dt
+      width: 20%
+      &>img
+        width: 100%
+        height: auto
+    &>dd
+      flex: 1
+      padding-left: .11rem
+      padding-top: .08rem
+      &>p
+        color: #000000
+        font-weight: bold
+        padding-bottom: .05rem
+        &>span
+          float: right
+          font-size: .12rem
+          color: #b2b2b2
+          font-weight: lighter
+      &>label
+        color: #808187
+        font-size: .14rem
+        &>time
+          color: #fbba90
+          padding-right: .04rem
+footer
+  height: .49rem
+  border-top: 1px solid #f0f0f0
+  &>ul
+    display: flex
+    &>li
+      flex: 1
+      text-align: center
+      padding-top: .06rem
+      &>span
+        font-size: .22rem
+        color: #bcbbc4
+      &>p
+        font-size: .12rem
+        font-weight: lighter
+        color: #c7c7c7
+    &>li:first-of-type
+      &>span
+        color: #5190fe
+      &>p
+        color: #22c8fc

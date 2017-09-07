@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/vue2.js"></script>
+
+</head>
+<body>
+    <header>
+        <span><img src="images/img_03.jpg" alt=""></span>
+        <p>消息</p>
+        <time>+</time>
+    </header>
+<section>
+    <div class="search">
+        <input type="text" placeholder="搜索">
+        <span><i class="fa fa-search"></i></span>
+    </div>
+    <div id="app">
+        <template id="tem" v-for="i in arr">
+            <div class="sec_list">
+                <dl>
+                    <dt><img :src="i.img" alt=""></dt>
+                    <dd>
+                        <p>{{i.title}} <span>{{i.time}}</span></p>
+                        <label>{{i.main}}<time>{{i.prompt}}</time></label>
+                    </dd>
+                </dl>
+            </div>
+        </template>
+    </div>
+</section>
+<footer>
+    <ul>
+        <li>
+            <span><i class="fa fa-smile-o"></i></span>
+            <p>消息</p>
+        </li>
+        <li>
+            <span><i class="fa fa-user-o"></i></span>
+            <p>联系人</p>
+        </li>
+        <li>
+            <span><i class="fa fa- fa-star-o"></i></span>
+            <p>动态</p>
+        </li>
+    </ul>
+</footer>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/vm.js"></script>
+</body>
+</html>
