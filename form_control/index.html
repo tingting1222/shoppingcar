@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue2.js"></script>
+    <style>
+        .fade-enter,.fade-leave-to{
+            fadeOut: true
+        }
+        .fade-enter-active,.fade-leave-active{
+            animation: bounce 3s
+
+        }
+        .fade-enter-to,.fade-leave{
+            fadeIn: true;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <span><i class="fa fa-angle-left"></i></span>
+    <p>京东注册</p>
+</header>
+<div id="app">
+
+</div>
+
+<template id="tem">
+    <div>
+        <transition name="fade">
+            <section v-if="state">
+                <div class="img">
+                    <input type="text" placeholder="请输入验证码" v-model="val1">
+                    <span>VmEl</span>
+                </div>
+                <ul>
+                    <li>
+                        <input type="text" placeholder="请输入手机验证码" v-model="val2">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="请设置6-20位登录密码" v-model="val3">
+                    </li>
+                </ul>
+                <p>密码由6-20位字母、数字或半角号组成，不能是10位以下纯数字/字母/半角符号，字母需区分大小写</p>
+            </section>
+        </transition>
+       <!-- <transition enter-active-class="animated fadeIn" leave-active-class="animated bounce">
+            <section v-if="state">
+                <div class="img">
+                    <input type="text" placeholder="请输入验证码" v-model="val1">
+                    <span>VmEl</span>
+                </div>
+                <ul>
+                    <li>
+                        <input type="text" placeholder="请输入手机验证码" v-model="val2">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="请设置6-20位登录密码" v-model="val3">
+                    </li>
+                </ul>
+                <p>密码由6-20位字母、数字或半角号组成，不能是10位以下纯数字/字母/半角符号，字母需区分大小写</p>
+            </section>
+        </transition>-->
+        <button @click="getnum">注册</button>
+        <button  @click="getdong">动画</button>
+    </div>
+</template>
+<script>
+var vm=new Vue({
+    el:"#app",
+    template:"#tem",
+    data:{
+      state:true,
+      val1:'',
+      val2:'',
+      val3:''
+    },
+    methods:{
+        getdong(){
+
+            this.state = !this.state
+
+        },
+        getnum(){
+
+            console.log(this.val1,this.val2,this.val3)
+        }
+    }
+})
+</script>
+</body>
+</html>
