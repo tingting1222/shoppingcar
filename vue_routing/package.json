@@ -1,0 +1,28 @@
+{
+  "name": "vue_routing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "css-loader": "*",
+    "html-loader": "*",
+    "html-webpack-plugin": "*",
+    "style-loader": "*",
+    "url-loader": "*",
+    "vue": "*",
+    "vue-loader": "*",
+    "vue-router": "*",
+    "vue-template-compiler": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}
