@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <span><i class="fa fa-angle-left"></i></span>
+        <p>
+            <span><i class="fa fa-search"></i></span>
+            <input type="text" placeholder="京东生鲜超极品类日，领取...">
+        </p>
+        <time><i class="fa fa-comment-o"></i></time>
+    </header>
+    <div id="app">
+        <router-view></router-view>
+
+        <footer>
+            <ul>
+                <router-link tag="li" to="/">
+                    <span><i class="fa fa-home"></i></span>
+                    <p>首页</p>
+                </router-link>
+                <router-link tag="li" to="/type">
+                    <span><i class="fa fa-bars"></i></span>
+                    <p>分类</p>
+                </router-link>
+                <router-link tag="li" to="/find">
+                    <span><i class="fa fa-search"></i></span>
+                    <p>发现</p>
+                </router-link>
+                <router-link tag="li" to="/shop">
+                    <span><i class="fa fa-shopping-cart"></i></span>
+                    <p>购物车</p>
+                </router-link>
+                <router-link tag="li" to="/mine">
+                    <span><i class="fa fa-user-o"></i></span>
+                    <p>我的</p>
+                </router-link>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

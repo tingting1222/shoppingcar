@@ -1,0 +1,30 @@
+[
+  {
+    "url":"./images/product/pic1.jpg",
+    "title":"设计者",
+    "price":"195",
+    "lv":"五星",
+    "btn":"购买"
+  },
+  {
+    "url":"./images/product/pic3.jpg",
+    "title":"设计者",
+    "price":"295",
+    "lv":"四星",
+    "btn":"购买"
+  },
+  {
+    "url":"./images/product/pic4.jpg",
+    "title":"设计者",
+    "price":"165",
+    "lv":"五星",
+    "btn":"购买"
+  },
+  {
+    "url":"./images/product/pic1.jpg",
+    "title":"设计者",
+    "price":"195",
+    "lv":"五星",
+    "btn":"购买"
+  }
+]
